@@ -1,0 +1,50 @@
+{
+  "d" : {
+    "results" : [
+      {
+        "__metadata" : {
+          "id" : "http://vhcala4hci:50000/sap/opu/odata/sap/ZSUPPLIERS_SRV/SUPPLIERSSet(1)",
+          "uri" : "http://vhcala4hci:50000/sap/opu/odata/sap/ZSUPPLIERS_SRV/SUPPLIERSSet(1)",
+          "type" : "ZSUPPLIERS_SRV.SUPPLIERS"
+        },
+        "Id" : 1,
+        "Name" : "EASTERN VICTORY",
+        "City" : "LOS ANGELES",
+        "Country" : "USA"
+      },
+      {
+        "__metadata" : {
+          "id" : "http://vhcala4hci:50000/sap/opu/odata/sap/ZSUPPLIERS_SRV/SUPPLIERSSet(2)",
+          "uri" : "http://vhcala4hci:50000/sap/opu/odata/sap/ZSUPPLIERS_SRV/SUPPLIERSSet(2)",
+          "type" : "ZSUPPLIERS_SRV.SUPPLIERS"
+        },
+        "Id" : 2,
+        "Name" : "NIRAMA MUTUAL LINES",
+        "City" : "PERTH",
+        "Country" : "AUSTRALIA"
+      },
+      {
+        "__metadata" : {
+          "id" : "http://vhcala4hci:50000/sap/opu/odata/sap/ZSUPPLIERS_SRV/SUPPLIERSSet(3)",
+          "uri" : "http://vhcala4hci:50000/sap/opu/odata/sap/ZSUPPLIERS_SRV/SUPPLIERSSet(3)",
+          "type" : "ZSUPPLIERS_SRV.SUPPLIERS"
+        },
+        "Id" : 3,
+        "Name" : "C-MILE MINING",
+        "City" : "PADANG",
+        "Country" : "INDONESIA"
+      },
+      {
+        "__metadata" : {
+          "id" : "http://vhcala4hci:50000/sap/opu/odata/sap/ZSUPPLIERS_SRV/SUPPLIERSSet(4)",
+          "uri" : "http://vhcala4hci:50000/sap/opu/odata/sap/ZSUPPLIERS_SRV/SUPPLIERSSet(4)",
+          "type" : "ZSUPPLIERS_SRV.SUPPLIERS"
+        },
+        "Id" : 4,
+        "Name" : "NEPTUNE CHEMICAL",
+        "City" : "CHENGDU",
+        "Country" : "CHINA"
+      }
+    ]
+  }
+}

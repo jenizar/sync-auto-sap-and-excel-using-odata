@@ -1,0 +1,19 @@
+  method SUPPLIERSSET_GET_ENTITYSET.
+   DATA: lt_filter TYPE /iwbep/t_mgw_select_option,
+         ls_filter TYPE /iwbep/s_mgw_select_option,
+         ls_selopt TYPE /iwbep/s_cod_select_option.
+
+     lt_filter = io_tech_request_context->get_filter( )->get_filter_select_options( ).
+
+     clear ls_filter.
+
+    READ TABLE it_filter_select_options INTO ls_filter WITH KEY property = 'Id'.
+     IF sy-subrc EQ 0.
+      LOOP AT ls_filter-select_options INTO ls_selopt.
+        SELECT ID, NAME, CITY, COUNTRY FROM ytb_suppliers INTO CORRESPONDING FIELDS OF TABLE @ET_ENTITYSET WHERE id = @ls_selopt-low.
+      ENDLOOP.
+     ELSE.
+       SELECT ID, NAME, CITY, COUNTRY FROM ytb_suppliers INTO CORRESPONDING FIELDS OF TABLE @ET_ENTITYSET.
+     ENDIF.
+  SORT ET_ENTITYSET by ID.
+  endmethod.
